@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Atmosphere Insight: Your Personalized Weather Hub</title>
+            <link rel="stylesheet" href="Weather_home.css" />
+        </head>
+
+        <body>
+            <nav>
+                <div class="heading">Weather website</div>
+                <span class="sideMenuButton" onclick="openNavbar()">☰</span>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="login_page.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="sideNavigationBar" id="sideNavigationBar">
+                <a href="#" class="closeButton" onclick="closeNavbar()">❌</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Sign Up</a>
+            </div>
+            <div class="bg-img">
+                <form action="/action_page.php" class="container" onsubmit="event.preventDefault();temp();">
+                    <h1>Discover your current location
+                        and access comprehensive climate data, forecasts, and more.</h1>
+                    <label for="location"><h3>Location</h3></label>
+                    <input type="text" placeholder="Enter Your Location" id="city" required>
+                    <button onclick="temp()">Search</button>
+                    <h1 id="temperature"></h1>
+                <script>
+                    function temp(){
+                        var cityname=document.getElementById("city").value;
+                        var apikey="4c8a993eaa746d667e1cf33f3c86eecd";
+                        var url=`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${apikey}`
+                        fetch(url)
+                            .then(data=>data.json())
+                            .then(data=>{
+                            document.getElementById("temperature").innerHTML=data.main.temp;
+                        })
+                    }
+                </script>
+                </form>
+            </div>
+        </body>
+    </html>

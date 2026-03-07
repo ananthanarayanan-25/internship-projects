@@ -1,0 +1,109 @@
+    * {
+    box-sizing: border-box;
+    }
+
+    .bg-img {
+    background-image: url("https://i.pinimg.com/736x/0b/b2/4d/0bb24db17d7214c5d67dba7a722aad34.jpg");
+    min-height: 380px;  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+
+    nav{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 5%;
+        background-color: #8cc099; }
+      
+        nav .heading{
+            font-size: 30px;
+            font-weight: 700;
+            color: white; }
+         
+        nav ul{
+            display: flex;
+            list-style: none; }
+         
+        nav ul li{
+            padding: 8px 15px;
+            border-radius: 10px;
+            transition: 0.2s ease-in; }
+         
+        nav ul li a{
+            color: black;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            color: white; }
+         
+        nav ul li:hover{ background-color: green; }
+        nav ul li a:hover{ color: white; }
+         
+        nav .sideMenuButton{
+            font-size: 30px;
+            font-weight: bolder;
+            cursor: pointer;
+            display: none; }
+         
+        .sideNavigationBar{
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: 0%;
+            background-color: green;
+            overflow-x: hidden;
+            transition: 0.3s ease-in;
+            padding-top: 60px;
+            display: none; }
+         
+        .sideNavigationBar a{
+            padding: 8px 8px 8px 40px;
+            display: block;
+            font-size: 25px;
+            font-weight: 500;
+            color: #d1d1d1;
+            transition: 0.3s;
+            text-decoration: none; }
+         
+        .sideNavigationBar a button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: green;
+            font-size: 16px;
+            border-style: none;
+            font-weight: 700; }
+         
+        .sideNavigationBar a:hover{ color: white; }
+         
+        .sideNavigationBar .closeButton{
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 20px;
+            margin-left: 50px; }
+                
+    .container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 400px;
+    padding: 16px;
+    background-color: wheat;
+    }
+
+    input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    }
+
+    input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+    }

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select{
+    color:grey;
+    background-color: black;
+    border: grey;
+}
+.right {
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.Language {
+    margin-right: 20px;
+    padding-top: 1px;
+}
+
+.img {
+    background: url('https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    color: #fff;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+}
+
+.footer {
+    background-color: #333;
+    color:grey;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    text-align: left;
+}
+
+a {
+    color: gray;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.Language {
+    margin-top: 20px;
+    padding: 8px;
+}
