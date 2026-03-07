@@ -1,16 +1,189 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Developer Details</title>
+        <title>About - Netflix Clone</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #141414;
+                color: #fff;
+            }
+            
+            header {
+                background-color: #000;
+                padding: 20px 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            header a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+                margin-right: 20px;
+            }
+            
+            header a:hover {
+                color: #e50914;
+            }
+            
+            .back-btn {
+                background-color: #e50914;
+                padding: 10px 20px;
+                border-radius: 4px;
+                color: white !important;
+                text-decoration: none;
+            }
+            
+            .back-btn:hover {
+                background-color: #c4081b;
+            }
+            
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 40px 20px;
+            }
+            
+            .about-section {
+                background-color: #222;
+                padding: 40px;
+                border-radius: 8px;
+                margin-bottom: 30px;
+            }
+            
+            .about-section h1 {
+                color: #e50914;
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #e50914;
+                padding-bottom: 15px;
+            }
+            
+            .about-section h2 {
+                color: #e50914;
+                font-size: 1.8em;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .about-section h3 {
+                color: #fff;
+                font-size: 1.3em;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .about-section p {
+                line-height: 1.6;
+                font-size: 1.1em;
+                color: #ccc;
+                margin-bottom: 15px;
+            }
+            
+            .info-box {
+                background-color: #111;
+                padding: 20px;
+                border-left: 4px solid #e50914;
+                margin: 20px 0;
+            }
+            
+            .info-box strong {
+                color: #e50914;
+            }
+            
+            footer {
+                background-color: #000;
+                padding: 30px 40px;
+                margin-top: 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            
+            .footer-left {
+                flex: 1;
+                min-width: 150px;
+            }
+            
+            .footer-center {
+                flex: 1;
+                text-align: center;
+                min-width: 200px;
+            }
+            
+            .footer-center a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            
+            .footer-center a:hover {
+                color: #e50914;
+            }
+            
+            select {
+                color: grey;
+                background-color: black;
+                border: 1px solid grey;
+                padding: 8px 12px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
-        <h1>Created by</h1><hr>
-        <h3>Anantha Narayanan A B</h3>
-        <p>A first year Student studying on <b>Sri Krishna College Of Technology ,Coimbatore</b> <br>
-        course <b>BE.CSE(AI&ML)</b><br><br><br>
-        To Contact :<br>
-        <b>Email Id : </b>saiananthu123@gmail.com<br>
-        <b>Contact No : </b>+91 75988 57550
-        </p>
+        <header>
+            <h2 style="margin: 0; color: #e50914;">NETFLIX</h2>
+            <a href="Netflix_Home.html" class="back-btn">← Back to Home</a>
+        </header>
+        
+        <div class="container">
+            <div class="about-section">
+                <h1>Created by</h1>
+                
+                <h3>Anantha Narayanan A B</h3>
+                
+                <p>A first year Student studying at <b>Sri Krishna College Of Technology, Coimbatore</b></p>
+                <p>Course: <b>BE.CSE (AI & ML)</b></p>
+                
+                <h2>About This Project</h2>
+                <p>This Netflix landing page clone is created as part of the BharatIntern internship program. It demonstrates the fundamental web development skills including HTML5, CSS3, and responsive design principles.</p>
+                
+                <h2>Contact Information</h2>
+                <div class="info-box">
+                    <p><strong>Email ID:</strong> saiananthu123@gmail.com</p>
+                    <p><strong>Contact No:</strong> +91 75988 57550</p>
+                </div>
+                
+                <h2>Project Details</h2>
+                <div class="info-box">
+                    <p><strong>Program:</strong> BharatIntern Internship</p>
+                    <p><strong>Task:</strong> Task 3 - Netflix Landing Page Clone</p>
+                    <p><strong>Year:</strong> 2026</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-left">
+                <select name="Language" class="Language">
+                    <option value="English">English</option>
+                    <option value="हिंदी">हिंदी</option>
+                </select>
+            </div>
+            <div class="footer-center">
+                <a href="Netflix_Home.html">← Back to Netflix Home</a>
+            </div>
+        </footer>
     </body>
 </html>

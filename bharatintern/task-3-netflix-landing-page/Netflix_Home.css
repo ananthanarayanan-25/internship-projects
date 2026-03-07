@@ -83,3 +83,28 @@ a {
     margin-top: 20px;
     padding: 8px;
 }
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom .Language {
+    margin: 0;
+    padding: 8px;
+}
+
+.about-link {
+    flex: 1;
+    text-align: center;
+    color: gray;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    color: #e50914;
+}
