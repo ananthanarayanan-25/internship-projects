@@ -1,0 +1,32 @@
+table,th,td { 
+    border: double black;
+} 
+th,td{
+    border: double white;
+}
+body{
+    background-color: grey;
+}
+input[type="button"] { 
+    width: 100%; 
+    padding: 20px 40px; 
+    background-color: black; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+}   
+#ACred{
+    background-color: red;
+}
+input[type="text"] { 
+    padding: 20px 30px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    border: 2px solid black; 
+} 
+input:hover{
+    opacity: 0.7;
+    background-color: grey;
+}
