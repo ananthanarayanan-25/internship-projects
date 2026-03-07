@@ -1,0 +1,44 @@
+table{ 
+    border: double black;
+    background-color: gray;
+} 
+th,td{
+    border: double white;
+}
+
+input[type="button"] { 
+    width: 100%; 
+    padding: 20px 40px; 
+    background-color: black; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+}   
+#red{
+    background-color: red;
+}
+#grey{
+    background-color:grey;
+    color: black;
+}
+#grey:hover{
+    background-color: white;
+    color: black;
+}
+#red:hover{
+    background-color: white;
+    color: black;
+}
+input[type="text"] { 
+    padding: 20px 100px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    border: 2px solid black; 
+} 
+input:hover{
+    opacity: 0.7;
+    background-color:white;
+    color: black;
+}
